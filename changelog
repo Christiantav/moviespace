@@ -1,0 +1,4 @@
+change log
+
+	- renamed the user folder to users
+	- changed installed apps in settgings.py from user to users
