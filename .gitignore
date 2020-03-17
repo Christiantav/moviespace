@@ -6,6 +6,9 @@
 # Icon must end with two \r
 Icon
 
+# YARN
+yarn.lock
+*.lock
 
 # Thumbnails
 ._*
