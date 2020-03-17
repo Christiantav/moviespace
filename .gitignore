@@ -10,6 +10,9 @@ Icon
 yarn.lock
 *.lock
 
+# Dependencies
+/node_modules
+
 # Thumbnails
 ._*
 
