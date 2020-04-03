@@ -1,0 +1,21 @@
+{
+    "extends": [
+      "airbnb"
+    ],
+    "plugins": [
+      "react",
+      "react-hooks"
+    ],
+    "rules": {
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn"
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".json", ".ts", ".tsx"]
+        }
+      }
+    }
+   }
+   

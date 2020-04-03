@@ -1,25 +1,25 @@
 {
   "name": "moviespace",
   "version": "1.0.0",
+  "description": "moviespace",
   "main": "index.js",
-  "repository": "https://github.com/Christiantav/moviespace.git",
-  "author": "Christian <chrisadrianotav@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "first-timer": "python3 -m venv env && . env/scripts/activate && pip3 install -r requirements.txt"
+    "dev": "webpack --mode development --watch ./frontend/src/index.js --output ./frontend/static/frontend/main.js",
+    "build": "webpack --mode production ./frontend/src/index.js --output ./frontend/static/frontend/main.js",
+    "python3-first-timer": "yarn install && python3 -m venv env && . env/scripts/activate && pip3 install -r requirements.txt",
+    "py-first-timer": "yarn install && py -m venv env && . env/scripts/activate && pip3 install -r requirements.txt",
+    "python3-start-server": "python3 manage.py makemigrations && python3 manage.py migrate && python3 manage.py runserver",
+    "py-start-server": "py manage.py makemigrations && py manage.py migrate && py manage.py runserver"
   },
   "devDependencies": {
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.3.1",
-    "@babel/preset-react": "^7.0.0",
-    "babel-loader": "^8.0.5",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
-    "webpack": "^4.29.0",
-    "webpack-cli": "^3.2.1"
-  },
-  "dependencies": {
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
-    "react-router-dom": "^4.3.1"
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11"
   }
 }
+
